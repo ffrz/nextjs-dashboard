@@ -23,7 +23,7 @@ export async function fetchRevenue() {
 
     return data.rows;
   } catch (error) {
-    console.error('Database Error:', error);
+    console.log('Database Error:', error);
     throw new Error('Failed to fetch revenue data.');
   }
 }
@@ -43,7 +43,7 @@ export async function fetchLatestInvoices() {
     }));
     return latestInvoices;
   } catch (error) {
-    console.error('Database Error:', error);
+    console.log('Database Error:', error);
     throw new Error('Failed to fetch the latest invoices.');
   }
 }
